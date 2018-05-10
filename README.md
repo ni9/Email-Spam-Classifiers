@@ -124,7 +124,7 @@ Enter text for testing as Spam/Ham. Press Ctrl+C to end the message
  > congratulations to the following winners of the 2001 et & s photo contest .
  > over 200 entries were submitted ! the winning photos will be displayed in the
  > 2001 et & s public education calendar .
- > 60 .3
+ > 
 
 
 Found most frequent words cached. Unpickling...
