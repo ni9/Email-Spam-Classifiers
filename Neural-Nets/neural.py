@@ -24,6 +24,10 @@ class NeuralNetwork(object):
         return self.tf_feedforward(x)
 
     def SGD(self, training_data, epochs, eta, mini_batch_size, test_data=None):
+        """
+        SGD stands for Stochastic gradient descent
+        """
+
         output_layer = self.layers[-1]
 
         cost = output_layer.cost(self.y)

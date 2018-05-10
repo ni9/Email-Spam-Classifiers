@@ -28,7 +28,7 @@ def block_input():
 def load_mfw(enron_ids, n):
     """
     load_mfw = load most frequent words
-    :param enron_ids: [1, 2, 3, 4]
+    :param enron_ids: [1, 2, 3, 4, 5, 6]
     :param n: 150
 
     :return: mfw
@@ -51,7 +51,7 @@ def load_mfw(enron_ids, n):
     return mfw
 
 
-enron_ids = [1, 2, 3, 4]  # List of enron datasets to load
+enron_ids = [1, 2, 3, 4, 5, 6]  # List of enron datasets to load
 mini_batch_size = 20  # Mini batch size for NeuralNetwork
 n = 150  # Number of words to consider
 train_fraction = 0.75  # fraction of enron data used for testing
@@ -72,10 +72,8 @@ test_data = enron.shared((ed[0][train_fraction:, :], ed[1][train_fraction:, :]))
 
 print('Using {} messages as training data'.format(train_fraction))
 
-net = NeuralNetwork(
-    layers=[FullyConnectedLayer(n, 80, activation_fn=softmax),
-            FullyConnectedLayer(80, 2, activation_fn=softmax),
-            CrossEntropyCostLayer(2)])
+net = NeuralNetwork(layers=[FullyConnectedLayer(n, 80, activation_fn=softmax),
+            FullyConnectedLayer(80, 2, activation_fn=softmax), CrossEntropyCostLayer(2)])
 
 print('Initialized Network:')
 print(net, '\n')
@@ -122,10 +120,12 @@ def activate_session():
 
                 X = enron.vectorize_text([text], mfw)
                 a = np.argmax(net.feedforward(X), axis=1)
+                print('')
                 if a[0] == 0:
-                    print('Net says: HAM')
+                    print('Neural Net classifies it as: HAM')
                 else:
-                    print('Net says: SPAM')
+                    print('Neural Net classifies it as: SPAM')
+                print('')
             else:
                 print('Invalid choice!')
 

@@ -19,7 +19,7 @@ os.makedirs(CACHE_PATH, exist_ok=True)
 
 def load_text(enron_id, cache=True):
     """
-    Reads all the files for `enron_id` dataset and
+    Reads all the files for every `enron_id data set` and
     returns a tuple of the form ([ham, spam]) where
     `ham` is a list of strings containing one ham email
     and `spam` is a list of strings each containing
@@ -86,7 +86,7 @@ def load_text(enron_id, cache=True):
 def most_freq_words(all_text, n):
     """
     Given a iterable (or list) of strings, this functions returns a list
-    of the `n` most frequent words. Use `itertools.chain` to combine
+    of the `n` most frequent words. Using `itertools.chain` to combine
     multiple text sources. This function converts all words to lowercase
     before returning them.
 
