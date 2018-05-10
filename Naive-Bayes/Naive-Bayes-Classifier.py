@@ -6,6 +6,7 @@ from collections import Counter
 from nltk import word_tokenize, WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk import NaiveBayesClassifier, classify
+
 stoplist = stopwords.words('english')
 
 
@@ -15,7 +16,7 @@ def init_lists(folder):
     for a_file in file_list:
         f = open(folder + '\\' + a_file, 'r', encoding="Latin-1")
         a_list.append(f.read())
-    f.close()
+        f.close()
     return a_list
 
 
@@ -53,8 +54,8 @@ def evaluate(train_set, test_set, classifier):
 if __name__ == '__main__':
     # Loading the data
     current_folder_path, current_folder_name = os.path.split(os.getcwd())
-    spam = init_lists(current_folder_path + '\\datasets\\enron1\\spam')
-    ham = init_lists(current_folder_path + '\\datasets\\enron1\\ham')
+    spam = init_lists(os.getcwd() + '\\data\\Enron\\enron1\\spam')
+    ham = init_lists(os.getcwd() + '\\data\\Enron\\enron1\\ham')
 
     # Preprocessing the data
     all_emails = [(email, 'spam') for email in spam]
