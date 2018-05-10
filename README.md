@@ -140,7 +140,7 @@ Enter 1 for train and 2 for testing the classifier
 
 Enter epochs and eta separated by a space.
 (Leave blank for epochs=60, eta=0.3)
- >
+ > 60 .3
 Current epoch: 0
 Accuracy on test data: 0.6622
 
