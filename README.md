@@ -2,7 +2,7 @@
 
 This project is made to differentiate ham and spam email and putting them into two groups under multiple approaches.
 
-> ###Approach-1 : Naive-Bayes 
+> ## Approach-1 : Naive-Bayes 
 
 - Loading the data
     - Corpus size = 5172 emails (enron1)
@@ -67,7 +67,7 @@ Most Informative Features
                   unique = 1                spam : ham    =     47.2 : 1.0
 ````
 
-> ###Approach-2 : Neural Nets
+> ## Approach-2 : Neural Nets
 - The current method used is:
 
     - Identify n ( default = 150 ) most frequent words in the corpus
