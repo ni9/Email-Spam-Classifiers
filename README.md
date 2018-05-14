@@ -30,6 +30,7 @@ This project is made to differentiate ham and spam email and putting them into t
 
 - **To Run the classifier**
     ```
+    pip install -r requirements
     python Naive-Bayes\Naive-Bayes-Classifier.py
     ```    
 #### Working Example
@@ -89,6 +90,7 @@ Most Informative Features
     
     - **To Run the classifier**
         ```
+        pip install -r requirements
         python Neural-Nets\Neural-Network-Classifier.py
         ```
     - An interactive session opens, where you can train and check the accuracy of the model, or enter custom text to test the model. 
