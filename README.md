@@ -114,7 +114,7 @@ Do you want to continue, press Y for yes and and N for no
 n
 Session terminated
 ````
-#####Note : Second example is reported as Spam but actually it is Ham
+##### Note : Second example is reported as Spam but actually it is Ham
 
 
 > ## Approach-2 : Neural Nets
