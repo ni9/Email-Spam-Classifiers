@@ -51,6 +51,50 @@ def evaluate(train_set, test_set, classifier):
     classifier.show_most_informative_features(20)
 
 
+def block_input():
+    """
+    Reads user input into a string until the user
+    presses Ctrl+C
+
+    returns:
+    The string read
+    """
+
+    text = ''
+    try:
+        while True:
+            print(' >', end=' ')
+            line = input().strip()
+            text = text + '\n' + line
+    except KeyboardInterrupt:
+        return text
+
+
+def activate_session():
+    try:
+        print("\nDo you want to test any email, press Y for yes and and N for no")
+        decision = input()
+
+        while (decision.upper() == "Y"):
+            print('Naive Bayes Spam Classifer')
+            print('')
+            print('Enter the text which you want to classify')
+
+            print('\nEnter email for testing as Spam/Ham. Press Ctrl+C to end the message')
+            email_text = block_input()
+
+            features = get_features(email_text, 'bow')
+            print("The email you entered is a " + (classifier.classify_many(featuresets=[features])[0]).upper())
+            print("---------------------------------------------------------------")
+            print("\nDo you want to continue, press Y for yes and and N for no")
+            decision = input()
+
+    except KeyboardInterrupt:
+        print('terminating...')
+
+    print('Session terminated')
+
+
 if __name__ == '__main__':
     # Loading the data
     current_folder_path, current_folder_name = os.path.split(os.getcwd())
@@ -72,3 +116,5 @@ if __name__ == '__main__':
 
     # evaluate its performance
     evaluate(train_set, test_set, classifier)
+
+    activate_session()
