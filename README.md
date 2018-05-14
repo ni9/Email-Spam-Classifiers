@@ -1,4 +1,4 @@
-# email-spam-classifier
+# Email-Spam-Classifier
 
 This project is made to differentiate ham and spam email and putting them into two groups under multiple approaches.
 
@@ -36,37 +36,86 @@ This project is made to differentiate ham and spam email and putting them into t
 #### Working Example
 ````    
 E:\Pycharm\email-spam-classifier>python Naive-Bayes\Naive-Bayes-Classifier.py
-
 Corpus size = 5172 emails
 Collected 5172 feature sets
 Training set size = 4137 emails
 Test set size = 1035 emails
-
-Accuracy on the training set = 0.9557650471356055
-Accuracy of the test set = 0.9420289855072463
-
+Accuracy on the training set = 0.9608411892675852
+Accuracy of the test set = 0.9391304347826087
 Most Informative Features
-               forwarded = 1                 ham : spam   =    147.1 : 1.0
-                    pain = 1                spam : ham    =     91.9 : 1.0
-                     nom = 1                 ham : spam   =     86.9 : 1.0
-                      xl = 2                 ham : spam   =     82.0 : 1.0
-                    spam = 1                spam : ham    =     82.0 : 1.0
-                     ibm = 1                spam : ham    =     72.1 : 1.0
-                congress = 1                spam : ham    =     65.5 : 1.0
-                    2005 = 1                spam : ham    =     65.5 : 1.0
-               complaint = 1                spam : ham    =     63.8 : 1.0
-             legislation = 1                spam : ham    =     62.2 : 1.0
-                     971 = 2                spam : ham    =     62.2 : 1.0
-                    sony = 1                spam : ham    =     62.1 : 1.0
-              compliance = 1                spam : ham    =     62.1 : 1.0
-                featured = 1                spam : ham    =     60.5 : 1.0
-            solicitation = 1                spam : ham    =     58.9 : 1.0
-                    duty = 2                spam : ham    =     57.2 : 1.0
-                    2000 = 2                 ham : spam   =     57.0 : 1.0
-                deciding = 1                spam : ham    =     52.2 : 1.0
-              nomination = 1                 ham : spam   =     50.4 : 1.0
-                  unique = 1                spam : ham    =     47.2 : 1.0
+               forwarded = 1                 ham : spam   =    144.9 : 1.0
+            prescription = 1                spam : ham    =     95.8 : 1.0
+              compliance = 1                spam : ham    =     92.5 : 1.0
+                    2001 = 1                 ham : spam   =     91.0 : 1.0
+                    pain = 1                spam : ham    =     89.2 : 1.0
+                     nom = 1                 ham : spam   =     88.2 : 1.0
+                      xl = 2                 ham : spam   =     85.3 : 1.0
+                    2005 = 1                spam : ham    =     79.2 : 1.0
+                   cheap = 1                spam : ham    =     72.5 : 1.0
+                   meter = 1                 ham : spam   =     69.3 : 1.0
+                creative = 1                spam : ham    =     67.5 : 1.0
+                featured = 1                spam : ham    =     64.2 : 1.0
+                     ibm = 1                spam : ham    =     60.9 : 1.0
+            solicitation = 1                spam : ham    =     57.5 : 1.0
+                    2000 = 2                 ham : spam   =     56.2 : 1.0
+                congress = 1                spam : ham    =     55.9 : 1.0
+                deciding = 1                spam : ham    =     54.2 : 1.0
+                    sony = 1                spam : ham    =     54.2 : 1.0
+              understood = 1                spam : ham    =     54.2 : 1.0
+                   cisco = 1                spam : ham    =     52.5 : 1.0
+
+Do you want to test any email, press Y for yes and and N for no
+y
+Naive Bayes Spam Classifer
+
+Enter the text which you want to classify
+
+Enter email for testing as Spam/Ham. Press Ctrl+C to end the message
+ > Subject: save your money by getting an oem software !
+ > need in software for your pc ? just visit our site , we might have what you need . . .
+ > best regards ,
+ > joey
+ >
+The email you entered is a SPAM
+---------------------------------------------------------------
+
+Do you want to continue, press Y for yes and and N for no
+y
+Naive Bayes Spam Classifer
+
+Enter the text which you want to classify
+
+Enter email for testing as Spam/Ham. Press Ctrl+C to end the message
+ > Subject: updated doorstep schedule
+ > dear sally ,
+ > here is the lastest . i ' ll continue to keep you in the loop .
+ > best regards
+ > shona
+ >
+The email you entered is a SPAM
+---------------------------------------------------------------
+
+Do you want to continue, press Y for yes and and N for no
+y
+Naive Bayes Spam Classifer
+
+Enter the text which you want to classify
+
+Enter email for testing as Spam/Ham. Press Ctrl+C to end the message
+ > Subject: hpl status
+ > the attached memo summarizes the status of the hpl transaction . please call me with any questions .
+ > regards ,
+ > brian
+ >
+The email you entered is a HAM
+---------------------------------------------------------------
+
+Do you want to continue, press Y for yes and and N for no
+n
+Session terminated
 ````
+##### Note : Second example is reported as Spam but actually it is Ham
+
 
 > ## Approach-2 : Neural Nets
 - The current method used is:
