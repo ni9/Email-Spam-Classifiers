@@ -149,38 +149,15 @@ Session terminated
     - The first run will take some time, but from the second time onwards enron's dataset(1-6) and most frequent words mfw( default n = 150 ) words will be cached, so it will run much quicker.
 #### Working Example
 ````
-E:\Pycharm\email-spam-classifier > python Neural-Nets\Neural-Network-Classifier.py
-
+E:\Pycharm\email-spam-classifier>python Neural-Nets\Neural-Network-Classifier.py
 WARNING (theano.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
-
 enron_ids:  [1, 2, 3, 4, 5, 6]
-
 Considering top-150 words
 Loading enron data
 Loaded 33698 messages from enron data
 Using 25274 messages as training data
-
 Initialized Network:
 NeuralNetwork(layers=[FullyConnectedLayer(150, 80, softmax), FullyConnectedLayer(80, 2, softmax), CrossEntropyCostLayer(2)])
-
-Neural Nets Spam Classifer
-
-Enter 1 for train and 2 for testing the classifier
-1] Train
-2] Test
- > 2
-
-Enter text for testing as Spam/Ham. Press Ctrl+C to end the message
- > Subject: et & s photo contest - announcing the winners
- > congratulations to the following winners of the 2001 et & s photo contest .
- > over 200 entries were submitted ! the winning photos will be displayed in the
- > 2001 et & s public education calendar .
- > 
-
-
-Found most frequent words cached. Unpickling...
-
-Neural Net classifies it as: SPAM
 
 Neural Nets Spam Classifer
 
@@ -191,186 +168,51 @@ Enter 1 for train and 2 for testing the classifier
 
 Enter epochs and eta separated by a space.
 (Leave blank for epochs=60, eta=0.3)
- > 60 .3
+ > 15 .378
 Current epoch: 0
-Accuracy on test data: 0.6622
+Accuracy on test data: 0.6380
 
 Current epoch: 1
-Accuracy on test data: 0.9023
+Accuracy on test data: 0.9099
 
 Current epoch: 2
-Accuracy on test data: 0.9249
+Accuracy on test data: 0.9264
 
 Current epoch: 3
-Accuracy on test data: 0.9323
+Accuracy on test data: 0.9369
 
 Current epoch: 4
-Accuracy on test data: 0.9341
+Accuracy on test data: 0.9430
 
 Current epoch: 5
-Accuracy on test data: 0.9365
+Accuracy on test data: 0.9454
 
 Current epoch: 6
-Accuracy on test data: 0.9385
+Accuracy on test data: 0.9471
 
 Current epoch: 7
-Accuracy on test data: 0.9382
+Accuracy on test data: 0.9493
 
 Current epoch: 8
-Accuracy on test data: 0.9387
-
-Current epoch: 9
-Accuracy on test data: 0.9404
-
-Current epoch: 10
-Accuracy on test data: 0.9418
-
-Current epoch: 11
-Accuracy on test data: 0.9429
-
-Current epoch: 12
-Accuracy on test data: 0.9432
-
-Current epoch: 13
-Accuracy on test data: 0.9450
-
-Current epoch: 14
-Accuracy on test data: 0.9462
-
-Current epoch: 15
-Accuracy on test data: 0.9463
-
-Current epoch: 16
-Accuracy on test data: 0.9476
-
-Current epoch: 17
-Accuracy on test data: 0.9483
-
-Current epoch: 18
-Accuracy on test data: 0.9495
-
-Current epoch: 19
-Accuracy on test data: 0.9498
-
-Current epoch: 20
-Accuracy on test data: 0.9501
-
-Current epoch: 21
-Accuracy on test data: 0.9500
-
-Current epoch: 22
-Accuracy on test data: 0.9505
-
-Current epoch: 23
 Accuracy on test data: 0.9515
 
-Current epoch: 24
-Accuracy on test data: 0.9527
+Current epoch: 9
+Accuracy on test data: 0.9539
 
-Current epoch: 25
-Accuracy on test data: 0.9533
-
-Current epoch: 26
-Accuracy on test data: 0.9540
-
-Current epoch: 27
+Current epoch: 10
 Accuracy on test data: 0.9549
 
-Current epoch: 28
-Accuracy on test data: 0.9555
-
-Current epoch: 29
+Current epoch: 11
 Accuracy on test data: 0.9565
 
-Current epoch: 30
-Accuracy on test data: 0.9563
+Current epoch: 12
+Accuracy on test data: 0.9575
 
-Current epoch: 31
-Accuracy on test data: 0.9569
-
-Current epoch: 32
-Accuracy on test data: 0.9569
-
-Current epoch: 33
-Accuracy on test data: 0.9581
-
-Current epoch: 34
-Accuracy on test data: 0.9582
-
-Current epoch: 35
-Accuracy on test data: 0.9589
-
-Current epoch: 36
+Current epoch: 13
 Accuracy on test data: 0.9595
 
-Current epoch: 37
-Accuracy on test data: 0.9601
-
-Current epoch: 38
-Accuracy on test data: 0.9607
-
-Current epoch: 39
-Accuracy on test data: 0.9613
-
-Current epoch: 40
-Accuracy on test data: 0.9613
-
-Current epoch: 41
-Accuracy on test data: 0.9620
-
-Current epoch: 42
-Accuracy on test data: 0.9625
-
-Current epoch: 43
-Accuracy on test data: 0.9628
-
-Current epoch: 44
-Accuracy on test data: 0.9628
-
-Current epoch: 45
-Accuracy on test data: 0.9631
-
-Current epoch: 46
-Accuracy on test data: 0.9635
-
-Current epoch: 47
-Accuracy on test data: 0.9645
-
-Current epoch: 48
-Accuracy on test data: 0.9659
-
-Current epoch: 49
-Accuracy on test data: 0.9664
-
-Current epoch: 50
-Accuracy on test data: 0.9664
-
-Current epoch: 51
-Accuracy on test data: 0.9667
-
-Current epoch: 52
-Accuracy on test data: 0.9673
-
-Current epoch: 53
-Accuracy on test data: 0.9681
-
-Current epoch: 54
-Accuracy on test data: 0.9686
-
-Current epoch: 55
-Accuracy on test data: 0.9689
-
-Current epoch: 56
-Accuracy on test data: 0.9695
-
-Current epoch: 57
-Accuracy on test data: 0.9701
-
-Current epoch: 58
-Accuracy on test data: 0.9704
-
-Current epoch: 59
-Accuracy on test data: 0.9704
+Current epoch: 14
+Accuracy on test data: 0.9599
 
 
 Neural Nets Spam Classifer
@@ -381,24 +223,41 @@ Enter 1 for train and 2 for testing the classifier
  > 2
 
 Enter text for testing as Spam/Ham. Press Ctrl+C to end the message
+ > Subject: hpl status
+ > the attached memo summarizes the status of the hpl transaction . please call me with any questions .
+ > regards ,
+ > brian
+ >
 
- > Subject: clyde drexler on espeak today !
- > join clyde drexler on espeak at ethink . enron . com , wednesday , june 14 at 10
- > a . m . houston time . clyde , an nba legend , will conduct an " open mike " session
- > to answer whatever questions you have for him .
- > are you at a remote location or can ' t make the event ? go into espeak now and
- > pre - submit your question ( s ) for clyde to answer during the scheduled event .
- > we want to answer everyone ' s questions , but due to the high volume of
- > questions we anticipate on this session , it would be helpful if you can keep
- > your questions short and simple . this will increase the opportunity for your
- > question to be answered .
- > ethink : invest your mind
+
+Found most frequent words cached. Unpickling...
+
+Neural Net classifies it as: HAM
+--------------------------------------------------
+Neural Nets Spam Classifer
+
+Enter 1 for train and 2 for testing the classifier
+1] Train
+2] Test
+ > 2
+
+Enter text for testing as Spam/Ham. Press Ctrl+C to end the message
+ > Subject: are you listed in major search engines ?
+ > submitting your website in search engines may increase your online sales dramatically .
+ > if you invested time and money into your website , you simply must submit your website
+ > online otherwise it will be invisible virtually , which means efforts spent in vain . if you want
+ > people to know about your website and boost your revenues , the only way to do that is to
+ > make your site visible in places where people search for information , i . e . submit your
+ > website in multiple search engines .
+ > submit your website online and watch visitors stream to your e - business .
+ > best regards ,
+ > giuseppina patton
  >
 
 
 
-Neural Net classifies it as: HAM
-
+Neural Net classifies it as: SPAM
+--------------------------------------------------
 Neural Nets Spam Classifer
 
 Enter 1 for train and 2 for testing the classifier
@@ -423,7 +282,7 @@ Enter text for testing as Spam/Ham. Press Ctrl+C to end the message
 
 
 Neural Net classifies it as: SPAM
-
+--------------------------------------------------
 Neural Nets Spam Classifer
 
 Enter 1 for train and 2 for testing the classifier
@@ -432,5 +291,6 @@ Enter 1 for train and 2 for testing the classifier
  >
 terminating...
 Session terminated
+
 
 ````
