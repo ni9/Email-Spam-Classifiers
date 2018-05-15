@@ -150,14 +150,12 @@ Session terminated
 #### Working Example
 ````
 E:\Pycharm\email-spam-classifier>python Neural-Nets\Neural-Network-Classifier.py
-WARNING (theano.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+
 enron_ids:  [1, 2, 3, 4, 5, 6]
 Considering top-150 words
 Loading enron data
 Loaded 33698 messages from enron data
 Using 25274 messages as training data
-Initialized Network:
-NeuralNetwork(layers=[FullyConnectedLayer(150, 80, softmax), FullyConnectedLayer(80, 2, softmax), CrossEntropyCostLayer(2)])
 
 Neural Nets Spam Classifer
 
