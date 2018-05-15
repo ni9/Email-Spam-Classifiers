@@ -75,9 +75,6 @@ print('Using {} messages as training data'.format(train_fraction))
 net = NeuralNetwork(layers=[FullyConnectedLayer(n, 80, activation_fn=softmax),
             FullyConnectedLayer(80, 2, activation_fn=softmax), CrossEntropyCostLayer(2)])
 
-print('Initialized Network:')
-print(net, '\n')
-
 
 def activate_session():
     mfw = None
