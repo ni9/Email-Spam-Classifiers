@@ -52,9 +52,9 @@ def load_mfw(enron_ids, n):
 
 
 enron_ids = [1, 2, 3, 4, 5, 6]  # List of enron datasets to load
-mini_batch_size = 20  # Mini batch size for NeuralNetwork
-n = 150  # Number of words to consider
-train_fraction = 0.75  # fraction of enron data used for testing
+mini_batch_size = 20            # Mini batch size for NeuralNetwork
+n = 150                         # Number of words to consider
+train_fraction = 0.75           # fraction of enron data used for testing
 
 print('enron_ids: ', enron_ids)
 print('Considering top-{} words'.format(n))
@@ -125,7 +125,7 @@ def activate_session():
                     print('Neural Net classifies it as: HAM')
                 else:
                     print('Neural Net classifies it as: SPAM')
-                print('')
+                print('--------------------------------------------------')
             else:
                 print('Invalid choice!')
 
